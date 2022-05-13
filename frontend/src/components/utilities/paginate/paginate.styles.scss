@@ -1,0 +1,27 @@
+.pagination {
+  margin-top: 5rem;
+  display: flex;
+  gap: 1rem;
+
+  &__link {
+    padding: 1rem;
+    transition: 0.2s all;
+    &--active {
+      position: relative;
+      color: white;
+
+      &::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background-color: black;
+        width: 3rem;
+        height: 3rem;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

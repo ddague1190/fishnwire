@@ -1,0 +1,121 @@
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100vw;
+  max-width: 50rem;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10000;
+  background-color: transparent;
+}
+
+.loader__text {
+  position: absolute;
+  font-size: 5rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.tuna,
+.dolphin,
+.marlin {
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  position: absolute;
+  width: 100%;
+  opacity: 0.7;
+}
+
+.marlin-cls-1 {
+  fill: #091a3a;
+}
+
+.marlin-cls-2 {
+  fill: #c3cdd3;
+}
+
+.marlin-cls-3 {
+  fill: #436094;
+}
+
+.marlin-cls-4 {
+  fill: #8b9a9d;
+}
+
+.marlin-cls-5 {
+  fill: #4a5459;
+}
+
+.marlin-cls-6 {
+  fill: #fdfdfe;
+}
+
+.dolphin-cls-1 {
+  fill: #304a46;
+}
+
+.dolphin-cls-2 {
+  fill: #c0cc44;
+}
+
+.dolphin-cls-3 {
+  fill: #7b984d;
+}
+
+.dolphin-cls-4 {
+  fill: #597b76;
+}
+
+.dolphin-cls-5 {
+  fill: #d2df82;
+}
+
+.dolphin-cls-6 {
+  fill: #fdfdfd;
+}
+
+.tuna-cls-1 {
+  fill: #2a313d;
+}
+
+.tuna-cls-2 {
+  fill: #465b6e;
+}
+
+.tuna-cls-3 {
+  fill: #92aaac;
+}
+
+.tuna-cls-4 {
+  fill: #687e91;
+}
+
+.tuna-cls-5 {
+  fill: #bec6cc;
+}
+
+.tuna-cls-6 {
+  fill: #fdfdfd;
+}
+/*# sourceMappingURL=loader.styles.css.map */
