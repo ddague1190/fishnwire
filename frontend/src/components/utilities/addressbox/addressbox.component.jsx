@@ -10,7 +10,7 @@ const AddressBox = ({
   disabled,
 }) => {
   if (!input) return "";
-
+  
   const {
     firstName,
     lastName,
@@ -23,16 +23,15 @@ const AddressBox = ({
   } = input;
 
   return (
-    <address className={`${className} ${
-      highlighted ? "addressbox--highlighted" : ""
-    } addressbox`}
-    onClick={!disabled ? () => selectedAddress(input, index) : null}>
-          {firstName} {lastName} <br/>
-        {company && <>{company}<br/></>}
-        {streetAddress}<br/>
-        {apartment && <>{apartment}<br/></>}
-          {city}, {state} {postalCode}<br/>
-        USA
+    <address
+      className={`${className} ${highlighted ? "addressbox--highlighted" : ""} addressbox`}
+      onClick={!disabled ? () => selectedAddress(input, index) : null}>
+      {firstName} {lastName} <br />
+      {company && <>{company}<br /></>}
+      {streetAddress}<br />
+      {apartment && <>{apartment}<br /></>}
+      {city}, {state} {postalCode}<br />
+      USA
     </address>
   );
 };

@@ -37,7 +37,7 @@ const AddressForm = ({
       phone: formDataPreSaved.phone,
       email: formDataPreSaved.email,
     });
-  }, [formDataPreSaved, formData, setFormData2]);
+  }, []);
 
   const { shippingAddress } = useSelector((state) => state.cart);
   useEffect(() => {

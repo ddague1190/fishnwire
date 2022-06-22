@@ -8,11 +8,12 @@ import { useEffect } from "react";
 
 export const ProfileOrders = () => {
   const { loading, error, orders } = useSelector((state) => state.orderListMy);
+  console.log(loading, error, orders)
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
   useEffect(() => {
-    if(!orders || orders.length===0) {
+    if(!orders) {
     dispatch(listMyOrders());
     }
   }, [dispatch, orders])
@@ -48,6 +49,14 @@ export const ProfileOrders = () => {
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200 bg-white">
+            {orders?.length===0 && (<tr className='bg-red-200'>
+                <td ></td>
+                <td className='text-center'>No orders</td>
+                <td></td>
+                <td></td>
+
+            </tr>
+              )}
             {orders?.map((order, index) => (
               <tr className="cursor-pointer  hover:bg-blue-100" key={index} onClick={()=>navigate(`/order/${order._id}`)}>
                 <td className="hidden sm:block whitespace-nowrap text-center py-4 mt-2 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
