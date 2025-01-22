@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACR,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,GAAG;EAChB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,UAAU;EACvB,MAAM,EAAE,MAAM;EACd,MAAM,EAAE,OAAO;EACf,WAAW,EAAE,IAAI;CAQpB;;AAJI,AAAD,wBAAc,CAAC;EACX,MAAM,EAAE,cAAc;EACtB,aAAa,EAAE,GAAG;CACrB",
+    "sources": [
+        "addressbox.styles.scss"
+    ],
+    "names": [],
+    "file": "addressbox.styles.css"
+}

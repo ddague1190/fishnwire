@@ -1,0 +1,71 @@
+import React from 'react'
+
+function Rating( {value, text, color='red'} ) {
+    return (
+        <div className="rating" style={{'fontSize': '1.6rem', 'display': 'flex', 'justifyContent': 'center'}}>
+            <span>
+                <i style={{color}} className={
+                    value >= 1
+                    ? 'fa fa-star'
+                    : value >= 0.5
+                        ? 'fas fa-star-half-alt'
+                        : 'far fa-star'
+                }>
+
+                </i>
+            </span>
+
+            <span>
+                <i style={{color}} className={
+                    value >= 2
+                    ? 'fa fa-star'
+                    : value >= 1.5
+                        ? 'fas fa-star-half-alt'
+                        : 'far fa-star'
+                }>
+
+                </i>
+            </span>
+
+            <span>
+                <i style={{color}} className={
+                    value >= 3
+                    ? 'fa fa-star'
+                    : value >= 2.5
+                        ? 'fas fa-star-half-alt'
+                        : 'far fa-star'
+                }>
+
+                </i>
+            </span>
+
+            <span>
+                <i style={{color}} className={
+                    value >= 4
+                    ? 'fa fa-star'
+                    : value >= 3.5
+                        ? 'fas fa-star-half-alt'
+                        : 'far fa-star'
+                }>
+
+                </i>
+            </span>
+
+            <span>
+                <i style={{color}} className={
+                    value >= 5
+                    ? 'fa fa-star'
+                    : value >= 4.5
+                        ? 'fas fa-star-half-alt'
+                        : 'far fa-star'
+                }>
+
+                </i>
+            </span>
+            
+            <p className='u-font-weight-light'>{text && text}</p>
+        </div>
+    )
+}
+
+export default Rating

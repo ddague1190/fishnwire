@@ -1,0 +1,33 @@
+.pagination {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.pagination__link {
+  padding: 1rem;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.pagination__link--active {
+  position: relative;
+  color: white;
+}
+
+.pagination__link--active::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: black;
+  width: 3rem;
+  height: 3rem;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=paginate.styles.css.map */
