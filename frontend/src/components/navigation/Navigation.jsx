@@ -127,7 +127,7 @@ export default function Navigation() {
                   <Tab.Group as="div" className="mb-auto mt-2">
                     <div className="border-b border-gray-200">
                       <Tab.List className="-mb-px flex flex-wrap px-4">
-                        {categories.map((category) => (
+                        {categories && categories.map((category) => (
                           <Tab
                             key={category.name}
                             className={({ selected }) =>
@@ -159,7 +159,8 @@ export default function Navigation() {
                               <ul
                                 aria-labelledby="mobile-categories-heading"
                                 className="mt-6 ml-5 space-y-2">
-                                {category.children.length>2 && category.children.map((item) => {
+                                {console.log(category.children)}
+                                {category.children && category.children.map((item) => {
                                   if (item.type === "product") {
                                     return (
                                       <li key={item.name} className="flex">
