@@ -12,7 +12,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../../redux/actions/userActions";
 import { useEffect } from "react";
 import { getCategories } from "../../redux/actions/productActions";
-import TinyFishFact from "./TinyFishFact";
+// import TinyFishFact from "./TinyFishFact";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -426,7 +426,7 @@ export default function Navigation() {
                                                   </ul>
 
                                                 </div>
-                                                <TinyFishFact fish={fish} />
+                                                {/* <TinyFishFact fish={fish} /> */}
 
                                                 {/* <div>
                                                   <p

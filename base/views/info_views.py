@@ -34,6 +34,7 @@ def getFishWatchAPI(request, id):
     "Content-Type":"application/json"
     }
     result = requests.get(url, headers=header)
+    print(result.json())
     selected_fish = result.json()[int(id)]
     response = {}
     try: 
