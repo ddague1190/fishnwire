@@ -159,7 +159,7 @@ export default function Navigation() {
                               <ul
                                 aria-labelledby="mobile-categories-heading"
                                 className="mt-6 ml-5 space-y-2">
-                                {category.children.length>1 && category.children.map((item) => {
+                                {category.children.length>2 && category.children.map((item) => {
                                   if (item.type === "product") {
                                     return (
                                       <li key={item.name} className="flex">
