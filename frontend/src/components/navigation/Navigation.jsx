@@ -63,7 +63,7 @@ export default function Navigation() {
 
 
 
-
+  console.log(categories);
   const onLogoutClick = () => {
     dispatch(logout());
     navigate("/");
