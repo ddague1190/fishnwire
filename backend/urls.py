@@ -10,7 +10,7 @@ from django.urls import re_path
 
 urlpatterns = [
 
-    path('fns192837465/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('api/info/', include('base.urls.info_urls')),
     path('api/categories/', include('base.urls.categories_urls')),
     path('api/brands/', include('base.urls.brand_urls')),
@@ -19,6 +19,7 @@ urlpatterns = [
     path('api/orders/', include('base.urls.order_urls')),
     path('webhooks/paypal/', ProcessWebhookView.as_view()),
     path('djrichtextfield/', include('djrichtextfield.urls')),
+    path('tinymce/', include('tinymce.urls')),
     re_path('', TemplateView.as_view(template_name='index.html')),
 ] 
 
