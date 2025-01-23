@@ -144,7 +144,7 @@ export default function Navigation() {
                       </Tab.List>
                     </div>
                     <Tab.Panels as={Fragment}>
-                      {categories.map((category, categoryIdx) => (
+                      {categories && categories.map((category, categoryIdx) => (
                         <Tab.Panel
                           key={category.name}
                           className="px-4 pt-10 pb-6 space-y-12">
