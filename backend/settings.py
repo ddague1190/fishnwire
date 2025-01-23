@@ -198,7 +198,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/staticfiles/'
+STATIC_URL = '/static/'
 
 MEDIA_URL = '/images/'
 
@@ -251,7 +251,7 @@ if os.getcwd() == '/app':
     DEBUG = False
 
 DJRICHTEXTFIELD_CONFIG = {
-    'js': ["//cdn.tiny.cloud/1/pdy4bjz3c6yoajq87sbmo3s940q4mjvqmqu4z82aj2yaojvl/7/tinymce.min.js"],
+    'js': ["//cdn.tiny.cloud/1/{TINY_MCE_KEY}/7/tinymce.min.js"],
     'init_template': 'djrichtextfield/init/tinymce.js',
     'settings': {
         'menubar': False,
