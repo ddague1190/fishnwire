@@ -86,7 +86,7 @@ export default function Navigation() {
   return (
     <div className="">
       {/* Mobile menu */}
-      {!loading && (
+      {!loading && categories && (
         <>
           <Transition.Root show={open} as={Fragment}>
             <Dialog
@@ -159,7 +159,6 @@ export default function Navigation() {
                               <ul
                                 aria-labelledby="mobile-categories-heading"
                                 className="mt-6 ml-5 space-y-2">
-                                {console.log(category.children)}
                                 {category.children && category.children.map((item) => {
                                   if (item.type === "product") {
                                     return (
