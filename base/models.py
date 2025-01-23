@@ -137,7 +137,7 @@ class Product(models.Model):
     category = models.ForeignKey(
         Category, related_name='productsbycategory', on_delete=models.CASCADE)
     subcategory = models.ForeignKey(
-        Category, related_name='productsbysubcategory', on_delete=models.CASCADE)
+        Category, related_name='productsbysubcategory', on_delete=models.CASCADE, null=True, blank=True)
     name = models.CharField(max_length=200)
     slug = models.SlugField(blank=True, unique=True)
     description = RichTextField()

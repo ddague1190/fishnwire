@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 export const BrowseCategories = () => {
   const { loading, categories } = useSelector((state) => state.categories);
-
   return (
     <section
       aria-labelledby="category-heading"
@@ -22,7 +21,7 @@ export const BrowseCategories = () => {
         <div className="-my-2">
           <div className="box-content py-2 relative h-80 overflow-x-auto xl:overflow-visible">
             <div className="absolute min-w-screen-xl px-4 flex space-x-8 sm:px-6 lg:px-8 xl:relative xl:px-0 xl:space-x-0 xl:grid xl:grid-cols-5 xl:gap-x-8">
-              {categories &&
+              {!loading && categories &&
                 categories.map((category) => (
                   <Link
                     key={category.name}

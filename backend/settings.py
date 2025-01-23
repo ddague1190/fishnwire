@@ -59,7 +59,8 @@ INSTALLED_APPS = [
     'payments.apps.PaymentsConfig',
     'corsheaders',
     'storages',
-    'mptt'
+    'mptt',
+    'tinymce'
 ]
 
 REST_FRAMEWORK = {
@@ -151,9 +152,10 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'darryldague',
+        'NAME': 'postgres',
         'USER': 'postgres',
         'PASSWORD': os.getenv('POSTGRES_PASS'),
+        # 'HOST': 'fishnwire.cj4umg8mi4v2.us-east-2.rds.amazonaws.com',
         'HOST': os.getenv('DATABASE_ENDPOINT'),
         'PORT': '5432'
     }
@@ -243,12 +245,13 @@ AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
 
 AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
 
+TINY_MCE_KEY = os.getenv('TINY_MCE_KEY')
 
 if os.getcwd() == '/app':
     DEBUG = False
 
 DJRICHTEXTFIELD_CONFIG = {
-    'js': ['//cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js'],
+    'js': ["//cdn.tiny.cloud/1/pdy4bjz3c6yoajq87sbmo3s940q4mjvqmqu4z82aj2yaojvl/7/tinymce.min.js"],
     'init_template': 'djrichtextfield/init/tinymce.js',
     'settings': {
         'menubar': False,

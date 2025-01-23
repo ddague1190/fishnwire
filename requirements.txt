@@ -13,7 +13,7 @@ charset-normalizer==2.0.9
 cryptography==3.4.7
 decorator==5.0.7
 dj-database-url==0.5.0
-Django==4.2.18
+Django==3.2
 django-appconf==1.0.5
 django-bleach==0.7.0
 django-cors-headers==3.10.1
@@ -41,7 +41,7 @@ django-tag-parser==3.2
 django-tinymce==3.3.0
 django-widget-tweaks==1.4.8
 DjangoHexadecimalField==0.0.3
-djangorestframework==3.15.2
+djangorestframework==3.13.0
 djangorestframework-simplejwt==5.0.0
 future==0.18.2
 gunicorn==20.1.0

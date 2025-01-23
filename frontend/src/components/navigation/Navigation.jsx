@@ -159,7 +159,7 @@ export default function Navigation() {
                               <ul
                                 aria-labelledby="mobile-categories-heading"
                                 className="mt-6 ml-5 space-y-2">
-                                {category.children.map((item) => {
+                                {category.children && category.children.map((item) => {
                                   if (item.type === "product") {
                                     return (
                                       <li key={item.name} className="flex">
@@ -331,7 +331,7 @@ export default function Navigation() {
                                                     
                                                     aria-labelledby={`desktop-featured-heading-${categoryIdx}`}
                                                     className="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
-                                                    {category.children.map(
+                                                    {category.children && category.children.map(
                                                       (item) => {
                                                         if (
                                                           item.type ===
@@ -365,7 +365,7 @@ export default function Navigation() {
                                                     
                                                     aria-labelledby="desktop-categories-heading"
                                                     className="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
-                                                    {category.children.map(
+                                                    {category.children && category.children.map(
                                                       (item) => {
                                                         if (
                                                           item.type ===
@@ -401,7 +401,7 @@ export default function Navigation() {
                                                     
                                                     aria-labelledby="desktop-collection-heading"
                                                     className="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
-                                                    {category.children.map(
+                                                    {category.children && category.children.map(
                                                       (item) => {
                                                         if (
                                                           item.type ===

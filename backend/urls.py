@@ -19,6 +19,7 @@ urlpatterns = [
     path('api/orders/', include('base.urls.order_urls')),
     path('webhooks/paypal/', ProcessWebhookView.as_view()),
     path('djrichtextfield/', include('djrichtextfield.urls')),
+    path('tinymce/', include('tinymce.urls')),
     re_path('', TemplateView.as_view(template_name='index.html')),
 ] 
 
