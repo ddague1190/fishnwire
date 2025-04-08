@@ -24,7 +24,7 @@ const navigation = {
   
   export default function Footer() {
     return (
-      <footer className="bg-blue-800 mt-10">
+      <footer className="bg-blue-800 ">
         <div className="max-w-7xl mx-auto py-8 px-4 overflow-hidden sm:px-6 lg:px-8">
           <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
             {navigation.main.map((item) => (
@@ -43,7 +43,7 @@ const navigation = {
               </a>
             ))}
           </div>
-          <p className="mt-8 text-center text-xs text-blue-50">&copy; 2022 FishNStik, Inc. All rights reserved.</p>
+          <p className="mt-8 text-center text-xs text-blue-50">&copy; 2025 Fish n Wire, Inc. All rights reserved.</p>
         </div>
       </footer>
     )

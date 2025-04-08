@@ -275,7 +275,7 @@ export default function Navigation() {
                       <div className="hidden lg:flex p-5 ml-0 mt-4  items-center text-lg text-blue-800">
                         <Link to="/">
                           <span className="text-2xl tracking-tighter font-bold">
-                            Fish n Wire
+                            FishnWire
                           </span>
                           <Snap />
                         </Link>

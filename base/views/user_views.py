@@ -37,6 +37,7 @@ class WithOTPTokenObtainPairView(TokenObtainPairView):
 
         serializer = self.get_serializer(data=request.data)
 
+
         if serializer.is_valid():
             return Response(serializer.validated_data, status=status.HTTP_200_OK)
 
@@ -46,13 +47,14 @@ class WithOTPTokenObtainPairView(TokenObtainPairView):
 class MyTokenObtainPairView(TokenObtainPairView):
     serializer_class = user_serializers.MyTokenObtainSerializer
 
-    # @method_decorator(ratelimit(key='post:username', rate='10/h', method='POST'))
+    @method_decorator(ratelimit(key='post:username', rate='10/h', method='POST'))
     def post(self, request, *args, **kwargs):
         was_limited = getattr(request, 'limited', False)
         if was_limited:
             return Response({'detail': 'Too many attempts, locked out for 1 hour. Contact store if you forgot password'}, status=status.HTTP_400_BAD_REQUEST)
 
         serializer = self.get_serializer(data=request.data)
+        
 
         if serializer.is_valid():
             return Response(serializer.validated_data, status=status.HTTP_200_OK)
@@ -64,7 +66,7 @@ class MyTokenRefreshView(TokenRefreshView):
 
     def post(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
-
+        print(request.data)
         if serializer.is_valid():
             return Response(serializer.validated_data, status=status.HTTP_200_OK)
 
@@ -102,6 +104,7 @@ class RegisterView(generics.CreateAPIView):
         if serializer.is_valid():
             instance = self.perform_create(serializer)
             credentials = self.get_tokens_for_user(instance)
+            # return Response(status=status.HTTP_201_CREATED)
             try:
                 self.email_validation(instance)
             except e.message:

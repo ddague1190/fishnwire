@@ -24,7 +24,7 @@ export default function FeaturedProduct() {
                       <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
                         <div className="w-44 h-64 rounded-lg overflow-hidden sm:opacity-0 lg:opacity-100">
                           <img
-                            src="https://fishnwirepictures.s3.amazonaws.com/Asset_7.png"
+                            src="https://fishnwirepictures.s3.us-east-2.amazonaws.com/ballyhooblack.png"
                             alt=""
                             className="w-full h-full object-center object-contain"
                           />
@@ -32,7 +32,7 @@ export default function FeaturedProduct() {
                         
                         <div className="w-44 h-64 rounded-lg overflow-hidden">
                           <img
-                            src="https://fishnwirepictures.s3.amazonaws.com/Asset_8.png"
+                            src="https://fishnwirepictures.s3.us-east-2.amazonaws.com/ballyhoopink.png"
                             alt=""
                             className="w-full h-full object-center object-contain"
                           />
@@ -41,21 +41,21 @@ export default function FeaturedProduct() {
                       <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
                         <div className="w-44 h-64 rounded-lg overflow-hidden">
                           <img
-                            src="https://fishnwirepictures.s3.amazonaws.com/Asset_4.png"
+                            src="https://fishnwirepictures.s3.us-east-2.amazonaws.com/blueballyhoo.png"
                             alt=""
                             className="w-full h-full object-center object-contain"
                           />
                         </div>
                         <div className="w-44 h-64 rounded-lg overflow-hidden">
                           <img
-                            src="https://fishnwirepictures.s3.amazonaws.com/Asset_6.png"
+                            src="https://fishnwirepictures.s3.us-east-2.amazonaws.com/bonita.png"
                             alt=""
                             className="w-full h-full object-center object-contain"
                           />
                         </div>
                         <div className="w-44 h-64 rounded-lg overflow-hidden">
                           <img
-                            src="https://fishnwirepictures.s3.amazonaws.com/Asset_2.png"
+                            src="https://fishnwirepictures.s3.us-east-2.amazonaws.com/flyingfish.png"
                             alt=""
                             className="w-full h-full object-center object-contain"
                           />
@@ -64,14 +64,14 @@ export default function FeaturedProduct() {
                       <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
                         <div className="w-44 h-64 rounded-lg overflow-hidden">
                           <img
-                            src="https://fishnwirepictures.s3.amazonaws.com/Asset_3.png"
+                            src="https://fishnwirepictures.s3.us-east-2.amazonaws.com/Mullet.png"
                             alt=""
                             className="w-full h-full object-center object-contain"
                           />
                         </div>
                         <div className="w-44 h-64 rounded-lg overflow-hidden">
                           <img
-                            src="https://fishnwirepictures.s3.amazonaws.com/Asset_4.png"
+                            src="https://fishnwirepictures.s3.us-east-2.amazonaws.com/smokinghot.png"
                             alt=""
                             className="w-full h-full object-center object-contain"
                           />
@@ -82,7 +82,7 @@ export default function FeaturedProduct() {
                 </div>
   
                 <Link
-                  to='/product/10inchbiggamelure'
+                  to='/product/biggame10inchswimbaitlures'
                   className="inline-block text-center bg-blue-800 border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-blue-700"
                 >
                   Explore Collection

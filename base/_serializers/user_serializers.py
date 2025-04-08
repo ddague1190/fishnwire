@@ -43,6 +43,7 @@ class MyTokenObtainSerializer(TokenObtainPairSerializer):
     def validate(self, attrs):
         
         data = super().validate(attrs)
+        print('asdfasdfasdfasdfhere')
         data['avatarUrl'] = self.get_avatarURL()
         # refresh = self.get_token(self.user)
         if not self.user.extra.isAuthenticated:

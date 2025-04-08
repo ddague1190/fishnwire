@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="relative bg-gray-800 py-32 px-6 sm:py-40 sm:px-12 lg:px-16 mt-10">
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1625183656263-171183307b15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2748&q=80"
+            src="https://fishnwirepictures.s3.us-east-2.amazonaws.com/photo-1625183656263-171183307b15.avif"
             alt=""
             className="w-full h-full object-center object-cover"
           />
